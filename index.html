@@ -35,6 +35,20 @@
           opacity: 0.5;
         }
 
+        .bgimg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('assets/images/slide8.png');
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5; /* Adjust opacity of the background image */
+  z-index: -1; /* Ensure it stays behind the content */
+}
+
         /* Position text in the top-left corner */
         .topleft img {
       position: absolute;
