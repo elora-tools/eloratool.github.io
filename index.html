@@ -12,7 +12,7 @@
           font-family: "Courier New", Courier, monospace;
         }
 
-        .bgimg {
+        .bgimg::after {
           /* Background image */
           background-image: url('assets/images/slide8.png');
           /* Full-screen */
@@ -32,7 +32,8 @@
           align-items: center;
           text-align: center;
           flex-direction: column;
-          background-color: rgba(0, 0, 0, 0.5);
+          background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here (0.5 for 50% opacity) */
+          z-index: -1;
         }
 
         /* Position text in the top-left corner */
